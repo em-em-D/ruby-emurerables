@@ -72,6 +72,18 @@ module Enumerable
         sum * n}
   end 
 
+  def my_any
+    self.my_each {
+      if yield
+        return true 
+      
+      else
+        return false
+  }
+  end
+  
+  end
+
 
 =begin
 EXAMPLE SET
